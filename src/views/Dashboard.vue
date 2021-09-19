@@ -6,46 +6,46 @@
 <template>
 	<div>
 		<!-- Counter Widgets -->
-		<a-row :gutter="24">
-			<a-col :span="24" :lg="12" :xl="6" class="mb-24" v-for="(stat, index) in stats" :key="index">
-				<!-- Widget 1 Card -->
-				<WidgetCounter
-					:title="stat.title"
-					:value="stat.value"
-					:prefix="stat.prefix"
-					:suffix="stat.suffix"
-					:icon="stat.icon"
-					:status="stat.status"
-				></WidgetCounter>
-				<!-- / Widget 1 Card -->
-			</a-col>
-		</a-row>
+<!--		<a-row :gutter="24">-->
+<!--			<a-col :span="24" :lg="12" :xl="6" class="mb-24" v-for="(stat, index) in stats" :key="index">-->
+<!--				&lt;!&ndash; Widget 1 Card &ndash;&gt;-->
+<!--				<WidgetCounter-->
+<!--					:title="stat.title"-->
+<!--					:value="stat.value"-->
+<!--					:prefix="stat.prefix"-->
+<!--					:suffix="stat.suffix"-->
+<!--					:icon="stat.icon"-->
+<!--					:status="stat.status"-->
+<!--				></WidgetCounter>-->
+<!--				&lt;!&ndash; / Widget 1 Card &ndash;&gt;-->
+<!--			</a-col>-->
+<!--		</a-row>-->
 		<!-- / Counter Widgets -->
 
 		<!-- Charts -->
-		<a-row :gutter="24" type="flex" align="stretch">
-			<a-col :span="24" :lg="10" class="mb-24">
+<!--		<a-row :gutter="24" type="flex" align="stretch">-->
+<!--			<a-col :span="24" :lg="10" class="mb-24">-->
 
-				<!-- Active Users Card -->
-				<CardBarChart></CardBarChart>
-				<!-- Active Users Card -->
+<!--				&lt;!&ndash; Active Users Card &ndash;&gt;-->
+<!--				<CardBarChart></CardBarChart>-->
+<!--				&lt;!&ndash; Active Users Card &ndash;&gt;-->
 
-			</a-col>
-			<a-col :span="24" :lg="14" class="mb-24">
-				
-				<!-- Sales Overview Card -->
-				<CardLineChart></CardLineChart>
-				<!-- / Sales Overview Card -->
+<!--			</a-col>-->
+<!--			<a-col :span="24" :lg="14" class="mb-24">-->
+<!--				-->
+<!--				&lt;!&ndash; Sales Overview Card &ndash;&gt;-->
+<!--				<CardLineChart></CardLineChart>-->
+<!--				&lt;!&ndash; / Sales Overview Card &ndash;&gt;-->
 
-			</a-col>
-		</a-row>
+<!--			</a-col>-->
+<!--		</a-row>-->
 		<!-- / Charts -->
 
 		<!-- Table & Timeline -->
 		<a-row :gutter="24" type="flex" align="stretch">
 			<!-- Table -->
-			<a-col :span="24" :lg="16" class="mb-24">
-				
+			<a-col :span="24" :lg="24" class="mb-24">
+
 				<!-- Projects Table Card -->
 				<CardProjectTable
 					:data="tableData"
@@ -57,34 +57,34 @@
 			<!-- / Table -->
 
 			<!-- Timeline -->
-			<a-col :span="24" :lg="8" class="mb-24">
+<!--			<a-col :span="24" :lg="8" class="mb-24">-->
 
-				<!-- Orders History Timeline Card -->
-				<CardOrderHistory></CardOrderHistory>
-				<!-- / Orders History Timeline Card -->
+<!--				&lt;!&ndash; Orders History Timeline Card &ndash;&gt;-->
+<!--				<CardOrderHistory></CardOrderHistory>-->
+<!--				&lt;!&ndash; / Orders History Timeline Card &ndash;&gt;-->
 
-			</a-col>
+<!--			</a-col>-->
 			<!-- / Timeline -->
 		</a-row>
 		<!-- / Table & Timeline -->
 
 		<!-- Cards -->
-		<a-row :gutter="24" type="flex" align="stretch">
-			<a-col :span="24" :xl="14" class="mb-24">
+<!--		<a-row :gutter="24" type="flex" align="stretch">-->
+<!--			<a-col :span="24" :xl="14" class="mb-24">-->
 
-				<!-- Information Card 1 -->
-				<CardInfo></CardInfo>
-				<!-- / Information Card 1 -->
+<!--				&lt;!&ndash; Information Card 1 &ndash;&gt;-->
+<!--				<CardInfo></CardInfo>-->
+<!--				&lt;!&ndash; / Information Card 1 &ndash;&gt;-->
 
-			</a-col>
-			<a-col :span="24" :xl="10" class="mb-24">
+<!--			</a-col>-->
+<!--			<a-col :span="24" :xl="10" class="mb-24">-->
 
-				<!-- Information Card 2 -->
-				<CardInfo2></CardInfo2>
-				<!-- / Information Card 2 -->
+<!--				&lt;!&ndash; Information Card 2 &ndash;&gt;-->
+<!--				<CardInfo2></CardInfo2>-->
+<!--				&lt;!&ndash; / Information Card 2 &ndash;&gt;-->
 
-			</a-col>
-		</a-row>
+<!--			</a-col>-->
+<!--		</a-row>-->
 		<!-- / Cards -->
 
 	</div>
@@ -163,29 +163,33 @@
 	] ;
 
 	// "Projects" table list of columns and their properties.
-	const tableColumns = [
-		{
-			title: 'COMPANIES',
-			dataIndex: 'company',
-			scopedSlots: { customRender: 'company' },
-			width: 300,
-		},
-		{
-			title: 'MEMBERS',
-			dataIndex: 'members',
-			scopedSlots: { customRender: 'members' },
-		},
-		{
-			title: 'BUDGET',
-			dataIndex: 'budget',
-			class: 'font-bold text-muted text-sm',
-		},
-		{
-			title: 'COMPLETION',
-			scopedSlots: { customRender: 'completion' },
-			dataIndex: 'completion',
-		},
-	];
+  const tableColumns = [
+    {
+      title: "Название",
+      dataIndex: "members",
+      scopedSlots: { customRender: "members" },
+    },
+    {
+      title: "Компания",
+      dataIndex: "company",
+      scopedSlots: { customRender: "company" },
+    },
+    {
+      title: "Формат",
+      dataIndex: "format",
+      scopedSlots: { customRender: "format" },
+    },
+    {
+      title: "Кол-во мест",
+      dataIndex: "budget",
+      class: "font-bold text-muted text-sm",
+    },
+    {
+      title: "Заполненность",
+      scopedSlots: { customRender: "completion" },
+      dataIndex: "completion",
+    },
+  ];
 
 	// "Projects" table list of rows and their properties.
 	const tableData = [
@@ -196,8 +200,9 @@
 				logo: 'images/logos/logo-shopify.svg',
 			},
 			members: [ "images/face-1.jpg", "images/face-4.jpg", "images/face-2.jpg", "images/face-3.jpg", ],
-			budget: '$14,000',
+			budget: '3000',
 			completion: 60,
+      format: "Все",
 		},
 		{
 			key: '2',
@@ -206,8 +211,9 @@
 				logo: 'images/logos/logo-atlassian.svg',
 			},
 			members: [ "images/face-4.jpg", "images/face-3.jpg", ],
-			budget: '$3,000',
+			budget: '1000',
 			completion: 10,
+      format: "Онлайн",
 		},
 		{
 			key: '3',
@@ -216,12 +222,13 @@
 				logo: 'images/logos/logo-slack.svg',
 			},
 			members: [ "images/face-1.jpg", "images/face-2.jpg", "images/face-3.jpg", ],
-			budget: 'Not Set',
+			budget: '200',
 			completion: {
 				label: '100',
 				status: 'success',
 				value: 100,
 			},
+      format: 'Офлайн',
 		},
 		{
 			key: '4',
@@ -230,12 +237,13 @@
 				logo: 'images/logos/logo-spotify.svg',
 			},
 			members: [ "images/face-1.jpg", "images/face-2.jpg", ],
-			budget: '$20,600',
+			budget: '610',
 			completion: {
 				label: '100',
 				status: 'success',
 				value: 100,
 			},
+      format: "Онлайн",
 		},
 		{
 			key: '5',
@@ -244,8 +252,9 @@
 				logo: 'images/logos/logo-jira.svg',
 			},
 			members: [ "images/face-1.jpg", "images/face-4.jpg", "images/face-2.jpg", "images/face-3.jpg", ],
-			budget: '$4,000',
+			budget: '140',
 			completion: 80,
+      format: 'Офлайн',
 		},
 		{
 			key: '6',
@@ -254,12 +263,13 @@
 				logo: 'images/logos/logo-invision.svg',
 			},
 			members: [ "images/face-1.jpg", "images/face-4.jpg", "images/face-3.jpg", ],
-			budget: '$2,000',
+			budget: '300',
 			completion: {
 				label: 'Cancelled',
 				status: 'exception',
 				value: 100,
 			},
+      format: 'Офлайн',
 		},
 	];
 
