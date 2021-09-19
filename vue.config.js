@@ -1,6 +1,8 @@
 module.exports = {
 	runtimeCompiler: true,
-
+	configureWebpack: {
+		devtool: 'source-map'
+	},
 	chainWebpack: config => {
 		config
 			.plugin('html')
