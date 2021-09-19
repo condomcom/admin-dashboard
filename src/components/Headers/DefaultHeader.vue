@@ -3,7 +3,7 @@
 	<!-- Layout Header ( Navbar ) -->
 	<a-layout-header>
 		<div class="header-col header-brand">
-			<h6>Muse Dashboard</h6>
+			<h6>Domcon</h6>
 
 			<!-- Trigger Button For Navigation Menu For Small Screens -->
 			<a-button type="link" @click="collapseNav = collapseNav ? 0 : 1 " class="btn-menu-trigger">
@@ -23,7 +23,7 @@
 							<path class="fill-muted" d="M3 10C3 9.44771 3.44772 9 4 9H10C10.5523 9 11 9.44771 11 10V16C11 16.5523 10.5523 17 10 17H4C3.44772 17 3 16.5523 3 16V10Z" fill="#111827"/>
 							<path class="fill-muted" d="M14 9C13.4477 9 13 9.44771 13 10V16C13 16.5523 13.4477 17 14 17H16C16.5523 17 17 16.5523 17 16V10C17 9.44771 16.5523 9 16 9H14Z" fill="#111827"/>
 						</svg>
-						<span>Dashboard</span>
+						<span>Главная</span>
 					</router-link>
 				</a-menu-item>
 				<a-menu-item>
@@ -80,7 +80,7 @@
 										<path class="fill-muted" d="M3 10C3 9.44771 3.44772 9 4 9H10C10.5523 9 11 9.44771 11 10V16C11 16.5523 10.5523 17 10 17H4C3.44772 17 3 16.5523 3 16V10Z" fill="#111827"/>
 										<path class="fill-muted" d="M14 9C13.4477 9 13 9.44771 13 10V16C13 16.5523 13.4477 17 14 17H16C16.5523 17 17 16.5523 17 16V10C17 9.44771 16.5523 9 16 9H14Z" fill="#111827"/>
 									</svg>
-									<span>Dashboard</span>
+									<span>Главная</span>
 								</router-link>
 							</a-menu-item>
 							<a-menu-item>
