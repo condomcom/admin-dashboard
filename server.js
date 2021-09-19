@@ -6,7 +6,7 @@ const app = express()
 
 app.use('/', serveStatic(path.join(__dirname, '/dist')))
 
-const port = process.env.PORT || 8081
-app.listen(port)
+app.set('port', (process.env.PORT || 8081))
+app.listen(app.get('port'))
 
 console.log('Listening on port: ' + port)
