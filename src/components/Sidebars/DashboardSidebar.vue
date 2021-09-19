@@ -41,17 +41,22 @@
 						<span class="label">Конференция</span>
 					</router-link>
 				</a-menu-item>
-<!--				<a-menu-item>-->
-<!--					<router-link to="/billing">-->
-<!--						<span class="icon">-->
+				<a-menu-item>
+					<router-link to="/add-conference">
+						<span class="icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.5858 3.58579C14.3668 2.80474 15.6332 2.80474 16.4142 3.58579C17.1953 4.36683 17.1953 5.63316 16.4142 6.41421L15.6213 7.20711L12.7929 4.37868L13.5858 3.58579Z" fill="#111827"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3787 5.79289L3 14.1716V17H5.82842L14.2071 8.62132L11.3787 5.79289Z" fill="#111827" ></path>
+              </svg>
+<!--              <a-icon type="edit" style="color: #111827"  width="20" height="20" />-->
 <!--							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">-->
 <!--								<path d="M4 4C2.89543 4 2 4.89543 2 6V7H18V6C18 4.89543 17.1046 4 16 4H4Z" fill="#111827"/>-->
 <!--								<path fill-rule="evenodd" clip-rule="evenodd" d="M18 9H2V14C2 15.1046 2.89543 16 4 16H16C17.1046 16 18 15.1046 18 14V9ZM4 13C4 12.4477 4.44772 12 5 12H6C6.55228 12 7 12.4477 7 13C7 13.5523 6.55228 14 6 14H5C4.44772 14 4 13.5523 4 13ZM9 12C8.44772 12 8 12.4477 8 13C8 13.5523 8.44772 14 9 14H10C10.5523 14 11 13.5523 11 13C11 12.4477 10.5523 12 10 12H9Z" fill="#111827"/>-->
 <!--							</svg>-->
-<!--						</span>-->
-<!--						<span class="label">Billing</span>-->
-<!--					</router-link>-->
-<!--				</a-menu-item>-->
+						</span>
+						<span class="label">[+ конференции]</span>
+					</router-link>
+				</a-menu-item>
 <!--				<a-menu-item>-->
 <!--					<router-link to="/rtl">-->
 <!--						<span class="icon">-->

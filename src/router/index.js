@@ -47,6 +47,12 @@ let routes = [
 		layout: "dashboard",
 		component: () => import('../views/Conference.vue'),
 	},
+	{
+		path: '/add-conference',
+		name: 'AddConference',
+		layout: "dashboard",
+		component: () => import('../views/AddConference.vue'),
+	},
 	// {
 	// 	path: '/rtl',
 	// 	name: 'RTL',
